@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  background-color: var(--Very-Light-Gray);
   font-family: Poppins;
   min-height: 100%;
   font-size: 15px;
@@ -69,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 10px 3px rgba(0, 0, 2, 0.1);
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 35px;
 }
 [class*="card-"] img {
@@ -139,12 +140,12 @@ body {
   }
   .container .cards {
     display: grid;
-    grid-template-rows: 1fr 20% 20% 1fr;
+    grid-template-rows: min-content 20% 20% min-content;
     grid-template-columns: 1fr 29rem 1fr;
   }
   .container .card-supervisor {
     justify-self: right;
-    grid-area: 2/1;
+    grid-area: 2/1/4/2;
   }
   .container .card-team-builder {
     grid-area: 1/2/3/2;
@@ -154,7 +155,7 @@ body {
   }
   .container .card-calculator {
     justify-self: left;
-    grid-area: 2/3;
+    grid-area: 2/3/4/4;
   }
   .container p {
     padding-right: 70px;
